@@ -219,7 +219,7 @@ function calculate() {
   const activity = radioactiveDecay(A0, halfLifeDays, days);
 
   resultsDiv.classList.add('show');
-  halfLifeResult.textContent = `${halfLifeYears} ani (${halfLifeDays.toFixed(4)} zile)`;
+  halfLifeResult.textContent = `T1/2 = ${halfLifeYears} ani (${halfLifeDays.toFixed(4)} zile)`;
   daysResult.textContent = `${days} zile`;
   activityResult.textContent = `${activity}`;
 }

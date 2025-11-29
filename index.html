@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Dezintegrare Radioactivă</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculator Dezintegrare Radioactivă</h1>
+    <p class="subtitle">Calculează activitatea radionuclidului la o dată specifică</p>
+
+    <div class="section">
+      <div class="section-title">Date Radionuclid</div>
+      <div class="input-group">
+        <label for="zaid">ZAID (Z*1000+A)</label>
+        <input type="number" id="zaid" placeholder="Ex: 27060 pentru Co-60">
+        <div class="hint">Exemplu: ZAID(⁶⁰Co) = 27*1000+60 = 27060</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Certificat de Etalonare (CE)</div>
+      <div class="input-group">
+        <label for="ceDate">Data din CE</label>
+        <input type="date" id="ceDate">
+      </div>
+      <div class="input-group">
+        <label for="A0">Activitatea la data din CE</label>
+        <input type="number" id="A0" step="any" placeholder="Ex: 1000">
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Data Măsurărilor</div>
+      <div class="input-group">
+        <label for="measureDate">Data măsurărilor</label>
+        <input type="date" id="measureDate">
+      </div>
+    </div>
+
+    <button onclick="calculate()">Calculează Activitatea</button>
+
+    <div class="results" id="results">
+      <div class="result-item">
+        <div class="result-label">Timpul de înjumătățire</div>
+        <div class="result-value" id="halfLifeResult">-</div>
+      </div>
+      <div class="result-item">
+        <div class="result-label">Număr de zile</div>
+        <div class="result-value" id="daysResult">-</div>
+      </div>
+      <div class="result-item">
+        <div class="result-label">Activitatea la data măsurărilor</div>
+        <div class="result-value" id="activityResult">-</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

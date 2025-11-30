@@ -196,6 +196,7 @@ function calculate() {
     return;
   }
 
+  // Find half-life
   const halfLifeYears = zaidData[zaid];
   if (!halfLifeYears) {
     resultsDiv.classList.add('show');
@@ -205,10 +206,12 @@ function calculate() {
     return;
   }
 
+  // Convert half-life to days
   const halfLifeDays = halfLifeYears * 365.2422;
 
+  // Extract day, month, year from dates
   const day0 = ceDate.getDate();
-  const month0 = ceDate.getMonth() + 1;
+  const month0 = ceDate.getMonth() + 1; // JavaScript months are 0-indexed
   const year0 = ceDate.getFullYear();
 
   const day1 = measureDate.getDate();
@@ -218,6 +221,7 @@ function calculate() {
   const days = timeCalc(day0, month0, year0, day1, month1, year1);
   const activity = radioactiveDecay(A0, halfLifeDays, days);
 
+  // Display results
   resultsDiv.classList.add('show');
   halfLifeResult.textContent = `T1/2 = ${halfLifeYears} ani (${halfLifeDays.toFixed(4)} zile)`;
   daysResult.textContent = `${days} zile`;

@@ -193,13 +193,13 @@ function calculate() {
 
   if (!zaid || !ceDate || !measureDate || !A0) {
     alert('Vă rugăm să completați toate câmpurile!');
-    return;
+    return;  // return ends the current function immediately
   }
 
   // Find half-life
   const halfLifeYears = zaidData[zaid];
   if (!halfLifeYears) {
-    resultsDiv.classList.add('show');
+    resultsDiv.classList.add('show');  // daca nu exista halfLifeYears tastat se afiseaza totusi resultsDiv-ul
     halfLifeResult.innerHTML = '<span style="color: #f44;">ZAID nu a fost găsit în baza de date!</span>';
     daysResult.textContent = '-';
     activityResult.textContent = '-';

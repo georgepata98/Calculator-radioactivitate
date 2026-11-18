@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-  background-color: #764ba2;
+/* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  background-color: #d1deda;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,8 +17,8 @@ body {
 
 .container {
   background: rgb(39, 38, 38);
-  border-radius: 10px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+/* border-radius: 10px; */
+/* box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); */
   padding: 40px;
   max-width: 600px;
   width: 100%;
@@ -68,7 +68,7 @@ input[type="date"] {
   width: 100%;
   padding: 12px;
   border: 2px solid #e0e0e0;
-  border-radius: 8px;
+/* border-radius: 8px; */
   font-size: 16px;
   transition: border-color 0.3s;
 }
@@ -91,7 +91,7 @@ button {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
-  border-radius: 8px;
+/* border-radius: 8px; */
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
@@ -112,7 +112,7 @@ button:active {
   margin-top: 30px;
   padding: 20px;
   background: #f8f9ff;
-  border-radius: 10px;
+/* border-radius: 10px; */
   display: none;
 }
 
@@ -130,7 +130,7 @@ button:active {
   margin-bottom: 15px;
   padding: 10px;
   background: white;
-  border-radius: 8px;
+/*border-radius: 8px; */
   border-left: 4px solid #667eea;
 }
 
@@ -154,3 +154,4 @@ button:active {
 .error .result-label {
   color: #f44;
 }
+
